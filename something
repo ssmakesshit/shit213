@@ -39,6 +39,34 @@ Section:NewToggle("ESP (Highlight)", "ToggleInfo", function(state)
     Instance.delete("highlight")
 end)
 
+local Tab = Window:NewTab("Aimlock")
+
+local Section = Tab:NewSection("Aiming")
+
+Section:NewButton("Load Aimlock (Prediction)", "", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/Ccv85N7r'), true))()
+end)
+
+Section:NewButton("Load Aimlock (No Prediction)", "", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/Ws3qgMT4'), true))()
+end)
+
+local Tab = Window:NewTab("Sword Fighting")
+
+local Section = Tab:NewSection("Sword Reach")
+
+Section:NewButton("Load Advanced Reach Script", "", function()
+    loadstring(game:HttpGet('https://www.0036.ml/stayalive/main/source.lua'))()
+end)
+
+Section:NewButton("Load Simple Reach Script", "", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/7rVsw5Sb'), true))()
+end)
+
+Section:NewButton("Load Simple Sword Aura", "", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/YNyC0kHs'), true))()
+end)
+
 local Tab = Window:NewTab("Chat Bypass (BANNABLE)")
 
 local Section = Tab:NewSection("words")
